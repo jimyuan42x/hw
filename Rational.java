@@ -61,8 +61,16 @@ public class Rational{
 	return (float)(num.value);
     }
 
-    public static void multiply(Rational num){
-	this.value = this.value * num;
+    public void multiply(Rational num){
+	//	System.out.println(this.value);
+	//	System.out.println(num.value);
+	this.value = this.value * num.value;
+    }
+    public void divide(Rational num){
+	//	System.out.println(this.value);
+	//	System.out.println(num.value);
+	this.value = this.value / num.value;
+
     }
     public static void main(String []args){
 
@@ -79,6 +87,10 @@ public class Rational{
 	Rational number = new Rational(100, 2);
 	System.out.println("This is Rational(100,2): " + number);
 	System.out.println("Floating numbers~ should match above: " + floatValue(number));
+	number.multiply(number);
+	System.out.println(number.value);
+	number.divide(number);
+	System.out.println(number.value);
 
     }
 
