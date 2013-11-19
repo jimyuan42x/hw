@@ -17,7 +17,8 @@ public class Rational{
     }
 
        public Rational(int numer, int denom){
- 
+	   System.out.println(numer);
+	   System.out.println(denom);
 
 	if (denom == 0){
 	    numerator = 0;
@@ -28,14 +29,20 @@ public class Rational{
 	    numerator = numer;
 	    denominator = denom;
 	}
-     
+	System.out.println(numerator);
+	System.out.println(denominator);
 
     }
     
     public String toString(){
-	value = numerator / denominator;
+	System.out.println(numerator);
+	System.out.println(denominator);
+	value = (double)numerator / (double)denominator;//now i feel stupid
+	System.out.println(value);
 	String ans = "";
+	System.out.println(ans);
 	ans += msg;
+	System.out.println(ans);
 	if (msg.equals("")){
 	    ans +=  value;
 
@@ -45,6 +52,7 @@ public class Rational{
 	    ans += "The value be here: " + value;	    
 
 	}
+	System.out.println(ans);
 	    return ans;
     }
 
@@ -53,7 +61,7 @@ public class Rational{
 	//make a Rational
 	Rational num = new Rational();
 	System.out.println("This is the default value of my default Rational: " + num);
-		Rational numOV = new Rational(4, 0);
+	Rational numOV = new Rational(4, 0);
 	System.out.println("This is Rational(4,0): " + numOV);
 	Rational anotherNum = new Rational(3, 4);
 	System.out.println("This is Rational(3,4): " + anotherNum);
