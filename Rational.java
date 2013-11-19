@@ -62,7 +62,7 @@ public class Rational{
     }
 
     public static void multiply(Rational num){
-	
+	//how to get the method user?
     }
     public static void main(String []args){
 
